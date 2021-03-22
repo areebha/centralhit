@@ -1,0 +1,8 @@
+public class LocalHelloServant extends javax.rmi.PortableRemoteObject implements LocalHello {
+
+    public LocalHelloServant() throws java.rmi.RemoteException {
+        JDKBridge.setLocalCodebase(null);
+    }
+        
+    public String sayHello (String to) throws java.rmi.RemoteException {
+        return "Hello " + to;
